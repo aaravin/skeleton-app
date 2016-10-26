@@ -32,6 +32,7 @@ module.exports = function(config) {
     },
 
     webpack: {
+      devtool: 'eval',
       module: {
         loaders: [
           {
