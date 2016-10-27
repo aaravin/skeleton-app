@@ -1,5 +1,6 @@
 // Karma configuration
 // Generated on Wed Oct 26 2016 13:54:37 GMT-0400 (EDT)
+var webpackConfig = require('./webpack.config.js');
 
 module.exports = function(config) {
   config.set({
@@ -31,27 +32,16 @@ module.exports = function(config) {
       'spec/**/*.js': ['webpack']
     },
 
-    webpack: {
-      devtool: 'eval',
-      module: {
-        loaders: [
-          {
-            test: /.jsx?$/,
-            loader: 'babel-loader',
-            exclude: /node_modules/,
-            query: {
-              presets: ['react', 'es2015']
-            }
-          }
-        ]
-      }
-    },
+    webpack: webpackConfig,
 
+    webpackMiddleware: {
+        noInfo: true
+    },
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress'],
+    reporters: ['dots'],
 
 
     // web server port

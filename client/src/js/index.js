@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Dummy from './components/DummyComponent.jsx';
+import App from './components/App.jsx';
 
-ReactDOM.render(<Dummy />, document.getElementById('app'));
+require.context("../static/", true, /\.(ico|html|txt)$/);
+
+ReactDOM.render(<App />, document.getElementById('app'));
