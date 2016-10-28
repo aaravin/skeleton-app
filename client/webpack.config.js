@@ -20,7 +20,7 @@ module.exports = {
             },
             { 
                 test: /\.(ico|html|txt)$/,
-                loader: "file?name=[path][name].[ext]"
+                loader: "file?name=[name].[ext]"
             }
         ]
     }
