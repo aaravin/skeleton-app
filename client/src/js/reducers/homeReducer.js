@@ -1,6 +1,7 @@
 import _ from 'lodash';
-import homeDefaults from './defaults/homeDefaults.js';
-import {SET_MESSAGES} from '../actions/homeActions.js';
+
+import homeDefaults from './defaults/homeDefaults';
+import {SET_MESSAGES} from '../actions/homeActions';
 
 export default function(state = homeDefaults, action) {
 	let newState = _.cloneDeep(state);

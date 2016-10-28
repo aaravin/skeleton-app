@@ -1,7 +1,7 @@
 import $ from 'jquery';
 
-import { SET_MESSAGES, setMessages, getMessages } from '../../src/js/actions/homeActions.js';
-import * as apiService from '../../src/js/services/apiService.js';
+import { SET_MESSAGES, setMessages, getMessages } from '../../src/js/actions/homeActions';
+import * as apiService from '../../src/js/services/apiService';
 
 describe('HomeActions', () => {
 	let dispatch;

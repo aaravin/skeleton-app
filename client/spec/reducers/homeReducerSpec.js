@@ -1,7 +1,6 @@
-import defaultState from '../../src/js/reducers/defaults/homeDefaults.js';
-import homeReducer from '../../src/js/reducers/homeReducer.js';
-
-import {SET_MESSAGES} from '../../src/js/actions/homeActions.js';
+import defaultState from '../../src/js/reducers/defaults/homeDefaults';
+import homeReducer from '../../src/js/reducers/homeReducer';
+import {SET_MESSAGES} from '../../src/js/actions/homeActions';
 
 describe('HomeReducer', () => {
 	let currentState, newState, action;

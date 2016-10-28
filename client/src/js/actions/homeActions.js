@@ -1,4 +1,4 @@
-import * as apiService from '../services/apiService.js';
+import * as apiService from '../services/apiService';
 
 export const SET_MESSAGES = 'SET_MESSAGES';
 

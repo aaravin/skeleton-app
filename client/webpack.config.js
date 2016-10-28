@@ -19,9 +19,16 @@ module.exports = {
                 }
             },
             { 
+                test: /\.css$/, 
+                loader: 'style-loader!css-loader' 
+            },
+            { 
                 test: /\.(ico|html|txt)$/,
                 loader: "file?name=[name].[ext]"
             }
         ]
+    },
+    resolve: {
+        extensions: ['', '.js', '.jsx', '.json', '.css'] 
     }
 };

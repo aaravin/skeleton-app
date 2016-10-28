@@ -5,9 +5,9 @@ import {Provider} from 'react-redux';
 import {Router, Route, IndexRoute, browserHistory} from 'react-router';
 import {syncHistoryWithStore} from 'react-router-redux';
 
-import combinedReducer from '../reducers/combinedReducer.js';
-import NavBar from './NavBar.jsx';
-import Home from './Home.jsx';
+import combinedReducer from '../reducers/combinedReducer';
+import NavBar from './NavBar';
+import Home from './Home';
 
 export default class App extends React.Component {
   createElement(Component, props) {

@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import axios from 'axios';
 
-import * as apiService from '../../src/js/services/apiService.js';
+import * as apiService from '../../src/js/services/apiService';
 
 describe('ApiService', () => {
 	describe('getMessages', () => {
